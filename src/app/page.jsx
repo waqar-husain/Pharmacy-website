@@ -1,4 +1,10 @@
+import Image from "next/image";
 import Link from "next/link";
+import cols from "@/icons/cols.svg";
+import star from "@/icons/star.svg";
+import pers from "@/images/photo.png";
+
+import UserReview from "./components/partials/userReview";
 export default function Home() {
   return (
     <>
@@ -32,6 +38,27 @@ export default function Home() {
       <section className="flex justify-center">
         <div className="max-w-[1440px] w-[100%] px-[1.3rem] my-[15rem]">
           SECTION 1
+        </div>
+      </section>
+
+      {/* SECTION 1 */}
+      <section className="flex justify-center font-lato">
+        <div className="max-w-[1440px] w-[100%] px-[1.3rem] my-[15rem] flex flex-col items-center">
+          <div className="max-w-[46rem] text-center">
+            <p className="uppercase tracking-[0.5rem] text-[1.6rem]">
+              Feedback
+            </p>
+            <h1 className=" font-montserrat text-[var(--color-text-dark)] text-[3rem] mt-[1.3rem] leading-[1.5] font-bold">
+              Feedbacks about our service from the bottom of heart
+            </h1>
+          </div>
+          {/* screen 600px => change grid to flex */}
+          <div className="  flex items-center flex-col sm:grid grid-cols-2 grid-rows-2 mt-[4.1rem]  gap-[2.2rem] w-[100%]">
+            <UserReview />
+            <UserReview />
+            <UserReview />
+            <UserReview />
+          </div>
         </div>
       </section>
     </>

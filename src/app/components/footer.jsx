@@ -12,10 +12,10 @@ export default function Footer() {
       <div className="max-w-[1440px] w-[100%] my-[9.5rem]">
         <div className="flex items-center justify-between ">
           <div>LOGO</div>
-          <div className="flex max-w-[66.2rem] w-[100%] justify-between items-center">
+          <div className="flex max-w-[66.2rem] w-[100%] justify-end space-x-[4rem] sm:justify-between items-center">
             <Contact phone="true" footer="true" text="(404) 850 - 7080" />
             <Contact footer="true" text="support@doctorate.com" />
-            <ul className="flex space-x-[2.7rem]">
+            <ul className="hidden space-x-[2.7rem]  sm:flex">
               <li>
                 <Link href="/">
                   <Image src={instaIco} alt="Instagram" />
@@ -34,8 +34,10 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        <div className="mt-[6.3rem] grid  grid-cols-[minmax(0%,_40%)_1fr_1fr_minmax(0%,_25%)] gap-[9.2rem]">
-          <div className=" font-montserrat text-[var(--color-text-dark)] font-[600] text-[3rem] max-w-[450px] leading-[1.4]">
+
+        {/* screen width = 700  grid-cols-3 grid-row-2 gap-[2rem] || 1st column  col-span-3 */}
+        <div className="mt-[6.3rem] grid grid-cols-4  sm:grid-cols-3 sm:grid-row-2 gap-y-[5rem] gap-[2rem] md:grid-cols-[minmax(0%,_40%)_1fr_1fr_minmax(0%,_25%)] md:gap-[9.2rem]  ">
+          <div className=" font-montserrat text-[var(--color-text-dark)] font-[600] text-[3rem] col-span-4 sm:col-span-3 max-w-[400px] leading-[1.4] grid md:col-span-1">
             “A Simple Story About The Doctorate Medical Center & Health Care
             Foundation
           </div>
@@ -55,7 +57,7 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div>
+          <div className="">
             <h6 className=" font-montserrat text-[var(--color-text-dark)] text-[2rem] font-[600]">
               Something
             </h6>
@@ -77,6 +79,23 @@ export default function Footer() {
             </h6>
             <div></div>
           </div>
+          <ul className="flex space-x-[2.7rem]  sm:hidden">
+            <li>
+              <Link href="/">
+                <Image src={instaIco} alt="Instagram" />
+              </Link>
+            </li>
+            <li>
+              <Link href="/">
+                <Image src={fbIco} alt="Facebook" />
+              </Link>
+            </li>
+            <li>
+              <Link href="/">
+                <Image src={twitterIco} alt="Twitter" />
+              </Link>
+            </li>
+          </ul>
         </div>
       </div>
     </footer>

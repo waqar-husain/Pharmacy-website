@@ -6,7 +6,7 @@ export default function TopBar() {
     <div className="bg-[var(--color-secondary)] flex justify-center  font-inter  p-[1.3rem]">
       <div className="max-w-[1440px] w-[100%] text-white flex justify-between items-center">
         <p>Welcome to Rectome Pharma. We provide medicines</p>
-        <div className=" max-w-[450px] w-[100%] flex justify-between ">
+        <div className=" space-x-[1rem] sm:max-w-[45rem] w-[100%] flex justify-between ">
           <Contact phone="true" text="(404) 850 - 7080" />
           <Contact mail="true" text="(404) 850 - 7080" />
         </div>
