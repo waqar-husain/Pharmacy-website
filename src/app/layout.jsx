@@ -2,6 +2,7 @@ import TopBar from "@/app/components/topBar";
 import "./globals.css";
 import { Lato, Inter, Montserrat } from "next/font/google";
 import NavBar from "@/app/components/navBar";
+import Footer from "./components/footer";
 
 const lato = Lato({
   subsets: ["latin"],
@@ -32,8 +33,8 @@ export default function RootLayout({ children }) {
       >
         <TopBar />
         <NavBar />
-
         {children}
+        <Footer />
       </body>
     </html>
   );

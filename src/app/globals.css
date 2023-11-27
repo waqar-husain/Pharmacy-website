@@ -24,6 +24,11 @@ html {
   box-sizing: border-box;
 }
 
+body {
+  font-size: 1.6rem;
+  box-sizing: border-box;
+}
+
 @media screen and (max-width: 1200px) {
   html {
     font-size: 50%; /*1rem=8px*/
