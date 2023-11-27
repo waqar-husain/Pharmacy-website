@@ -5,6 +5,9 @@
 :root {
   --color-primary: #0fe3af;
   --color-secondary: #0152a8;
+  --color-text-dark: #1c1c1c;
+  --color-text-light: #363636;
+  --color-text-lightest: #545454;
 }
 *,
 *::before,
@@ -17,6 +20,7 @@
 
 html {
   font-size: 62.5%; /*1rem=10px */
+  line-height: 2.5rem;
   box-sizing: border-box;
 }
 
@@ -33,12 +37,6 @@ html {
 }
 @media screen and (max-width: 600px) {
   html {
-    font-size: 37.5%; /*1rem=4px*/
+    font-size: 25%; /*1rem=4px*/
   }
-}
-
-body {
-  font-family: lato;
-  line-height: 2.4rem;
-  font-weight: 400;
 }
