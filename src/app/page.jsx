@@ -100,6 +100,11 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* SECTION 3 */}
+      {/* <section className="flex justify-center font-lato">
+        <div className="max-w-[1440px] w-[100%] px-[1.3rem] my-[15rem] flex flex-col items-center"></div>
+      </section> */}
     </>
   );
 }

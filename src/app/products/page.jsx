@@ -1,5 +1,10 @@
 import React from "react";
+import PageHeader from "../components/pageHeader";
 
 export default function page() {
-  return <div>PRODUCTS</div>;
+  return (
+    <>
+      <PageHeader title="Products" />
+    </>
+  );
 }

@@ -1,5 +1,10 @@
 import React from "react";
+import PageHeader from "../components/pageHeader";
 
 export default function page() {
-  return <div>Contact Us</div>;
+  return (
+    <>
+      <PageHeader title="Contact Us" />
+    </>
+  );
 }
