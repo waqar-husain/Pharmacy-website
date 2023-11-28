@@ -1,13 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
-import med1 from "@/images/med1.jpg";
-import med2 from "@/images/med2.jpg";
-import med3 from "@/images/med3.jpg";
-import med4 from "@/images/med4.jpg";
-import med5 from "@/images/med5.jpg";
-import med6 from "@/images/med6.jpg";
-import med7 from "@/images/med7.jpg";
-import med8 from "@/images/med8.jpg";
+import med1 from "@/images/amoxytome.jpg";
+import med2 from "@/images/levotome.jpg";
+import med3 from "@/images/ciprotome.jpg";
+import med4 from "@/images/cefixtome.jpg";
+import med5 from "@/images/azitome.jpg";
+import med6 from "@/images/pantacare.jpg";
+import med7 from "@/images/diclocare.jpg";
+import med8 from "@/images/mancare-d.jpg";
 
 import UserReview from "./components/partials/userReview";
 export default function Home() {
@@ -38,69 +38,101 @@ export default function Home() {
           </div>
         </div>
       </header>
+      <main>
+        {/* SECTION 1 */}
+        <section className="flex justify-center font-lato">
+          <div className="max-w-[1440px] w-[100%] px-[1.3rem] my-[15rem] flex flex-col items-center">
+            <div className="max-w-[46rem] text-center">
+              <p className="uppercase tracking-[0.5rem] text-[1.6rem]">
+                Prodcuts
+              </p>
+              <h1 className=" font-montserrat text-[var(--color-text-dark)] text-[3rem] mt-[1.3rem] leading-[1.5] font-bold">
+                We Delivers The Best
+              </h1>
+            </div>
 
-      {/* SECTION 1 */}
-      <section className="flex justify-center font-lato">
-        <div className="max-w-[1440px] w-[100%] px-[1.3rem] my-[15rem] flex flex-col items-center">
-          <div className="max-w-[46rem] text-center">
-            <p className="uppercase tracking-[0.5rem] text-[1.6rem]">
-              Prodcuts
-            </p>
-            <h1 className=" font-montserrat text-[var(--color-text-dark)] text-[3rem] mt-[1.3rem] leading-[1.5] font-bold">
-              We Delivers The Best
-            </h1>
+            <div className=" grid grid-cols-[min(250px,_400px)] sm:grid-cols-[repeat(2,minmax(300px,_400px))] xl:grid-cols-[repeat(4,minmax(300px,_400px))] mt-[2.4rem] gap-[2rem]">
+              <div className="rounded-[0.5rem]  border-2  border-[var(--color-secondary)] shadow-lg overflow-hidden p-[1rem]">
+                <Image
+                  src={med1}
+                  alt="amoxytome"
+                  className=" rounded-[0.5rem] "
+                />
+              </div>
+              <div className="rounded-[0.5rem] border-2  border-[var(--color-secondary)] shadow-lg overflow-hidden p-[1rem]">
+                <Image
+                  src={med2}
+                  alt="levotome"
+                  className=" rounded-[0.5rem] "
+                />
+              </div>
+              <div className="rounded-[0.5rem] border-2  border-[var(--color-secondary)] shadow-lg overflow-hidden p-[1rem]">
+                <Image
+                  src={med3}
+                  alt="ciprotome"
+                  className=" rounded-[0.5rem] "
+                />
+              </div>
+              <div className="rounded-[0.5rem] border-2  border-[var(--color-secondary)] shadow-lg overflow-hidden p-[1rem]">
+                <Image
+                  src={med4}
+                  alt="cefixtome"
+                  className=" rounded-[0.5rem] "
+                />
+              </div>
+              <div className="rounded-[0.5rem] border-2  border-[var(--color-secondary)] shadow-lg overflow-hidden p-[1rem]">
+                <Image
+                  src={med5}
+                  alt="azitome"
+                  className=" rounded-[0.5rem] "
+                />
+              </div>
+              <div className="rounded-[0.5rem] border-2  border-[var(--color-secondary)] shadow-lg overflow-hidden p-[1rem]">
+                <Image
+                  src={med6}
+                  alt="pantacare"
+                  className=" rounded-[0.5rem] "
+                />
+              </div>
+              <div className="rounded-[0.5rem] border-2  border-[var(--color-secondary)] shadow-lg overflow-hidden p-[1rem]">
+                <Image
+                  src={med7}
+                  alt="diclocare"
+                  className=" rounded-[0.5rem] "
+                />
+              </div>
+              <div className="rounded-[0.5rem] border-2  border-[var(--color-secondary)] shadow-lg overflow-hidden p-[1rem]">
+                <Image
+                  src={med8}
+                  alt="mancare"
+                  className=" rounded-[0.5rem] "
+                />
+              </div>
+            </div>
           </div>
+        </section>
 
-          <div className=" grid grid-cols-[min(250px,_400px)] sm:grid-cols-[repeat(2,minmax(300px,_400px))] xl:grid-cols-[repeat(4,minmax(300px,_400px))] mt-[2.4rem] gap-[2rem]">
-            <div className="rounded-[0.5rem]  border-2  border-[var(--color-secondary)] shadow-lg overflow-hidden p-[1rem]">
-              <Image src={med1} alt="med1" className=" rounded-[0.5rem] " />
+        {/* SECTION 2 */}
+        <section className="flex justify-center font-lato">
+          <div className="max-w-[1440px] w-[100%] px-[1.3rem] my-[15rem] flex flex-col items-center">
+            <div className="max-w-[46rem] text-center">
+              <p className="uppercase tracking-[0.5rem] text-[1.6rem]">
+                Feedback
+              </p>
+              <h1 className=" font-montserrat text-[var(--color-text-dark)] text-[3rem] mt-[1.3rem] leading-[1.5] font-bold">
+                Feedbacks about our service from the bottom of heart
+              </h1>
             </div>
-            <div className="rounded-[0.5rem] border-2  border-[var(--color-secondary)] shadow-lg overflow-hidden p-[1rem]">
-              <Image src={med2} alt="med2" className=" rounded-[0.5rem] " />
-            </div>
-            <div className="rounded-[0.5rem] border-2  border-[var(--color-secondary)] shadow-lg overflow-hidden p-[1rem]">
-              <Image src={med3} alt="med3" className=" rounded-[0.5rem] " />
-            </div>
-            <div className="rounded-[0.5rem] border-2  border-[var(--color-secondary)] shadow-lg overflow-hidden p-[1rem]">
-              <Image src={med4} alt="med4" className=" rounded-[0.5rem] " />
-            </div>
-            <div className="rounded-[0.5rem] border-2  border-[var(--color-secondary)] shadow-lg overflow-hidden p-[1rem]">
-              <Image src={med5} alt="med5" className=" rounded-[0.5rem] " />
-            </div>
-            <div className="rounded-[0.5rem] border-2  border-[var(--color-secondary)] shadow-lg overflow-hidden p-[1rem]">
-              <Image src={med6} alt="med6" className=" rounded-[0.5rem] " />
-            </div>
-            <div className="rounded-[0.5rem] border-2  border-[var(--color-secondary)] shadow-lg overflow-hidden p-[1rem]">
-              <Image src={med7} alt="med7" className=" rounded-[0.5rem] " />
-            </div>
-            <div className="rounded-[0.5rem] border-2  border-[var(--color-secondary)] shadow-lg overflow-hidden p-[1rem]">
-              <Image src={med8} alt="med8" className=" rounded-[0.5rem] " />
+            {/* screen 600px => change grid to flex */}
+            <div className="  flex items-center flex-col sm:grid grid-cols-[repeat(2,minmax(300px,_600px))] justify-center grid-rows-2 mt-[4.1rem]  gap-[2.2rem] w-[100%]">
+              <UserReview />
+              <UserReview />
+              <UserReview />
+              <UserReview />
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* SECTION 2 */}
-      <section className="flex justify-center font-lato">
-        <div className="max-w-[1440px] w-[100%] px-[1.3rem] my-[15rem] flex flex-col items-center">
-          <div className="max-w-[46rem] text-center">
-            <p className="uppercase tracking-[0.5rem] text-[1.6rem]">
-              Feedback
-            </p>
-            <h1 className=" font-montserrat text-[var(--color-text-dark)] text-[3rem] mt-[1.3rem] leading-[1.5] font-bold">
-              Feedbacks about our service from the bottom of heart
-            </h1>
-          </div>
-          {/* screen 600px => change grid to flex */}
-          <div className="  flex items-center flex-col sm:grid grid-cols-[repeat(2,minmax(300px,_600px))] justify-center grid-rows-2 mt-[4.1rem]  gap-[2.2rem] w-[100%]">
-            <UserReview />
-            <UserReview />
-            <UserReview />
-            <UserReview />
-          </div>
-        </div>
-      </section>
-
+        </section>
+      </main>
       {/* SECTION 3 */}
       {/* <section className="flex justify-center font-lato">
         <div className="max-w-[1440px] w-[100%] px-[1.3rem] my-[15rem] flex flex-col items-center"></div>
