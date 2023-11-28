@@ -77,7 +77,10 @@ export default function Footer() {
             <h6 className=" font-montserrat text-[var(--color-text-dark)] text-[2rem] font-[600]">
               Contact Us
             </h6>
-            <div></div>
+            <div>
+              <p>+(404) 850 - 7080</p>
+              <p>+(404) 850 - 7080</p>
+            </div>
           </div>
           <ul className="flex space-x-[2.7rem]  sm:hidden">
             <li>

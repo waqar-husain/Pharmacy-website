@@ -40,7 +40,7 @@ export default function Home() {
       </header>
 
       {/* SECTION 1 */}
-      <section className="flex justify-center">
+      <section className="flex justify-center font-lato">
         <div className="max-w-[1440px] w-[100%] px-[1.3rem] my-[15rem] flex flex-col items-center">
           <div className="max-w-[46rem] text-center">
             <p className="uppercase tracking-[0.5rem] text-[1.6rem]">
@@ -56,25 +56,25 @@ export default function Home() {
               <Image src={med1} alt="med1" className=" rounded-[0.5rem] " />
             </div>
             <div className="rounded-[0.5rem] border-2  border-[var(--color-secondary)] shadow-lg overflow-hidden p-[1rem]">
-              <Image src={med2} alt="med2" />
+              <Image src={med2} alt="med2" className=" rounded-[0.5rem] " />
             </div>
             <div className="rounded-[0.5rem] border-2  border-[var(--color-secondary)] shadow-lg overflow-hidden p-[1rem]">
-              <Image src={med3} alt="med3" />
+              <Image src={med3} alt="med3" className=" rounded-[0.5rem] " />
             </div>
             <div className="rounded-[0.5rem] border-2  border-[var(--color-secondary)] shadow-lg overflow-hidden p-[1rem]">
-              <Image src={med4} alt="med4" />
+              <Image src={med4} alt="med4" className=" rounded-[0.5rem] " />
             </div>
             <div className="rounded-[0.5rem] border-2  border-[var(--color-secondary)] shadow-lg overflow-hidden p-[1rem]">
-              <Image src={med5} alt="med5" />
+              <Image src={med5} alt="med5" className=" rounded-[0.5rem] " />
             </div>
             <div className="rounded-[0.5rem] border-2  border-[var(--color-secondary)] shadow-lg overflow-hidden p-[1rem]">
-              <Image src={med6} alt="med6" />
+              <Image src={med6} alt="med6" className=" rounded-[0.5rem] " />
             </div>
             <div className="rounded-[0.5rem] border-2  border-[var(--color-secondary)] shadow-lg overflow-hidden p-[1rem]">
-              <Image src={med7} alt="med7" />
+              <Image src={med7} alt="med7" className=" rounded-[0.5rem] " />
             </div>
             <div className="rounded-[0.5rem] border-2  border-[var(--color-secondary)] shadow-lg overflow-hidden p-[1rem]">
-              <Image src={med8} alt="med8" />
+              <Image src={med8} alt="med8" className=" rounded-[0.5rem] " />
             </div>
           </div>
         </div>
