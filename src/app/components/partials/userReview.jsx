@@ -6,7 +6,7 @@ import pers from "@/images/photo.png";
 
 export default function UserReview() {
   return (
-    <div className="p-[4.6rem] bg-[#F1F1F1] text-[var(--color-text-lightest)] max-w-[400px] sm:max-w-[100%]">
+    <div className="p-[4.6rem] bg-[#F1F1F1] text-[var(--color-text-lightest)] max-w-[300px] sm:max-w-[100%]">
       <div className="flex justify-between pb-[2rem] border-b-[1px] border-[#CDCDCD]">
         <div className="flex items-center">
           <div className=" rounded-full overflow-hidden">

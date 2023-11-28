@@ -8,7 +8,7 @@ export default function Contact(props) {
   return (
     <span className="flex items-center">
       <div
-        className={`h-[3.4rem] w-[3.4rem] rounded-full ${
+        className={`h-[28px] w-[28px] sm:h-[34px] sm:w-[34px] rounded-full ${
           props.footer ? "bg-[var(--color-primary)]" : "bg-[#085FBA]"
         }  flex justify-center items-center mr-[0.8rem]`}
       >
