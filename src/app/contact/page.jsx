@@ -10,7 +10,24 @@ export default function page() {
     <>
       <PageHeader title="Contact Us" />
       <main>
-        <section className="mt-[15rem] mb-[7rem] flex justify-center font-lato text-[var(--color-text-lightest)]">
+        <section className=" mt-[7rem] font-lato text-[var(--color-text-lightest)] flex justify-center text-[1.6rem] ">
+          <div className="bg-[url('../images/image.jpg')] bg-cover max-w-[1200px] w-[100%] flex justify-center bg-center">
+            <div className="my-[12.5rem] max-w-[328px] w-[100%] bg-white/[.98] px-[3.1rem] py-[4.6rem] text-center">
+              <div className="text-[var(--color-text-dark)]">
+                <p className=" border-[1px] tracking-[0.5rem] inline-block uppercase px-[0.9rem] py-[0.3rem] ">
+                  Time
+                </p>
+                <h3 className="mt-[1.3rem] text-[3rem] font-semibold leading-[1.3] font-montserrat">
+                  Working Hours
+                </h3>
+              </div>
+              <p className="mt-[0.4rem]">
+                Sunday To Friday 9.00 am - 10.00 pm Saturday Closed
+              </p>
+            </div>
+          </div>
+        </section>
+        <section className="mt-[7rem] mb-[7rem] flex justify-center font-lato text-[var(--color-text-lightest)]">
           <div className="max-w-[1440px] w-[100%] flex flex-col  items-center">
             <div className="max-w-[46rem] text-center">
               <p className="uppercase tracking-[0.5rem] text-[1.6rem]">
@@ -34,7 +51,7 @@ export default function page() {
                     Address
                   </h4>
                   <p className="mt-[1.4rem]">
-                    209 North Dunbar St. Santa Monica, CA 90403
+                    Near Radha Cinema Nanital Road ,Civil Lines, Rampur - 244901
                   </p>
                 </div>
               </div>
@@ -51,7 +68,9 @@ export default function page() {
                     Call Us
                   </h4>
                   <p className="mt-[1.4rem]">
-                    (+22) 123 - 4567 - 901 <br /> (+22) 123 - 4567 - 901
+                    <p>+(91) 9808559417</p>
+                    <p>+(91) 8475817286</p>
+                    <p>+(91) 9927114578</p>
                   </p>
                 </div>
               </div>
@@ -67,11 +86,7 @@ export default function page() {
                   <h4 className="text-[2rem] font-semibold text-[var(--color-text-dark)]">
                     E-mail Us
                   </h4>
-                  <p className="mt-[1.4rem]">
-                    support@doctorate.com
-                    <br />
-                    yourmail@gmail.com
-                  </p>
+                  <p className="mt-[1.4rem]">reactomepharma@gmail.com</p>
                 </div>
               </div>
             </div>

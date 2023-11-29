@@ -16,7 +16,7 @@ export default function Contact(props) {
         {props.footer && !props.phone && <Image src={mail2} alt="mail2" />}
         {props.phone && <PhoneIcon footer={props.footer} />}
       </div>
-      <p>{props.text}</p>
+      <p className=" whitespace-nowrap">{props.text}</p>
     </span>
   );
 }

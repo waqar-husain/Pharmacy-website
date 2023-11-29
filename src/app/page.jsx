@@ -40,8 +40,8 @@ export default function Home() {
       </header>
       <main>
         {/* SECTION 1 */}
-        <section className="flex justify-center font-lato">
-          <div className="max-w-[1440px] w-[100%] px-[1.3rem] my-[15rem] flex flex-col items-center">
+        <section className="flex justify-center font-lato mt-[15rem]">
+          <div className="max-w-[1440px] w-[100%] px-[1.3rem] flex flex-col items-center">
             <div className="max-w-[46rem] text-center">
               <p className="uppercase tracking-[0.5rem] text-[1.6rem]">
                 Prodcuts
@@ -113,8 +113,8 @@ export default function Home() {
         </section>
 
         {/* SECTION 2 */}
-        <section className="flex justify-center font-lato">
-          <div className="max-w-[1440px] w-[100%] px-[1.3rem] my-[15rem] flex flex-col items-center">
+        <section className="flex justify-center font-lato my-[15rem]">
+          <div className="max-w-[1440px] w-[100%] px-[1.3rem]  flex flex-col items-center">
             <div className="max-w-[46rem] text-center">
               <p className="uppercase tracking-[0.5rem] text-[1.6rem]">
                 Feedback

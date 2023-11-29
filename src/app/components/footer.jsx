@@ -5,16 +5,31 @@ import Image from "next/image";
 import instaIco from "../../icons/insta.svg";
 import fbIco from "../../icons/Fb.svg";
 import twitterIco from "../../icons/Twitter.svg";
+import logo from "@/images/logo.png";
 
 export default function Footer() {
   return (
     <footer className="flex justify-center font-lato bg-[url('../images/footerBg.jpg')] bg-cover bg-no-repeat bg-center px-[1.3rem]  text-[var(--color-text-lightest)]">
       <div className="max-w-[1440px] w-[100%] my-[9.5rem]">
         <div className="flex items-center justify-between ">
-          <div>LOGO</div>
+          <div className=" flex  items-center">
+            <Image
+              src={logo}
+              alt="reactomepharma"
+              className="w-[4.5rem] h-[4.5rem]"
+            />
+            <p className=" text-[red] whitespace-nowrap ml-[0.5rem] text-[2rem] font-extrabold font-montserrat">
+              REACTOME
+              <span className="ml-[0.5rem] text-[var(--color-secondary)]">
+                PHARMA
+              </span>
+            </p>
+          </div>
           <div className="flex max-w-[66.2rem] w-[100%] justify-end space-x-[4rem] sm:justify-between items-center">
-            <Contact phone="true" footer="true" text="(404) 850 - 7080" />
-            <Contact footer="true" text="support@doctorate.com" />
+            <div className="hidden sm:inline-block">
+              <Contact phone="true" footer="true" text="+(91) 9808559417" />
+            </div>
+            <Contact footer="true" text="reactomepharma@gmail.com" />
             <ul className="hidden space-x-[2.7rem]  sm:flex">
               <li>
                 <Link href="/">
@@ -78,8 +93,9 @@ export default function Footer() {
               Contact Us
             </h6>
             <div>
-              <p>+(404) 850 - 7080</p>
-              <p>+(404) 850 - 7080</p>
+              <p>+(91) 9808559417</p>
+              <p>+(91) 8475817286</p>
+              <p>+(91) 9927114578</p>
             </div>
           </div>
           <ul className="flex space-x-[2.7rem]  sm:hidden">
