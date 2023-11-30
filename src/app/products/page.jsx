@@ -75,7 +75,7 @@ export default function page() {
                   />
                   <div className=" invisible  opacity-0 cursor-pointer transition-[all] duration-500 sm:group-hover:visible group-hover:opacity-100 flex justify-center items-center absolute top-0 left-[0rem] bg-black/80 w-[100%] h-[100%]">
                     <Link href="/contact">
-                      <button className="bg-[var(--color-secondary)] mt-[1.4rem] px-[4.1rem] py-[1.7rem] font-inter text-white ">
+                      <button className="hover:bg-[#143450] transition duration-200 shadow-md bg-[var(--color-secondary)] mt-[1.4rem] px-[4.1rem] py-[1.7rem] font-inter text-white ">
                         Contact Now!
                       </button>
                     </Link>

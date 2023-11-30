@@ -67,11 +67,11 @@ export default function page() {
                   <h4 className="text-[2rem] font-semibold text-[var(--color-text-dark)]">
                     Call Us
                   </h4>
-                  <p className="mt-[1.4rem]">
+                  <div className="mt-[1.4rem]">
                     <p>+(91) 9808559417</p>
                     <p>+(91) 8475817286</p>
                     <p>+(91) 9927114578</p>
-                  </p>
+                  </div>
                 </div>
               </div>
               <div className="border-[1px] shadow-md flex flex-col items-center border-[#e1e1e1] py-[6rem] px-[9rem]">

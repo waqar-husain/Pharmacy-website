@@ -31,7 +31,7 @@ export default function Home() {
               dignissimos est eum enim officiis nihil.
             </p>
             <Link href="/products">
-              <button className="bg-[var(--color-secondary)] mt-[1.4rem] px-[4.1rem] py-[1.7rem] font-inter text-white ">
+              <button className=" hover:bg-[#143450] transition duration-200 shadow-md bg-[var(--color-secondary)] mt-[1.4rem] px-[4.1rem] py-[1.7rem] font-inter text-white ">
                 Get Started
               </button>
             </Link>

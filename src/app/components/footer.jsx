@@ -12,7 +12,7 @@ export default function Footer() {
     <footer className="flex justify-center font-lato bg-[url('../images/footerBg.jpg')] bg-cover bg-no-repeat bg-center px-[1.3rem]  text-[var(--color-text-lightest)]">
       <div className="max-w-[1440px] w-[100%] my-[9.5rem]">
         <div className="flex items-center justify-between ">
-          <div className=" flex  items-center">
+          <div className=" flex  items-center cursor-default">
             <Image
               src={logo}
               alt="reactomepharma"
@@ -62,13 +62,25 @@ export default function Footer() {
             </h6>
             <ul className="mt-[1.4rem] leading-[2]">
               <li>
-                <Link href="/">Home</Link>
+                <Link href="/" className="hover:text-[var(--color-secondary)]">
+                  Home
+                </Link>
               </li>
               <li>
-                <Link href="/about">About</Link>
+                <Link
+                  href="/about"
+                  className="hover:text-[var(--color-secondary)]"
+                >
+                  About
+                </Link>
               </li>
               <li>
-                <Link href="/products">Products</Link>
+                <Link
+                  href="/products"
+                  className="hover:text-[var(--color-secondary)]"
+                >
+                  Products
+                </Link>
               </li>
             </ul>
           </div>
@@ -78,13 +90,25 @@ export default function Footer() {
             </h6>
             <ul className="mt-[1.4rem] leading-[2]">
               <li>
-                <Link href="/">Home</Link>
+                <Link href="/" className="hover:text-[var(--color-secondary)]">
+                  Home
+                </Link>
               </li>
               <li>
-                <Link href="/about">About</Link>
+                <Link
+                  href="/about"
+                  className="hover:text-[var(--color-secondary)]"
+                >
+                  About
+                </Link>
               </li>
               <li>
-                <Link href="/products">Products</Link>
+                <Link
+                  href="/products"
+                  className="hover:text-[var(--color-secondary)]"
+                >
+                  Products
+                </Link>
               </li>
             </ul>
           </div>
