@@ -13,19 +13,21 @@ export default function NavBar() {
   return (
     <nav className="flex justify-center py-[3rem] px-[1.3rem] text-[1.8rem] font-inter relative">
       <div className=" max-w-[1440px] w-[100%] flex justify-between items-center">
-        <div className=" flex  items-center cursor-default">
-          <Image
-            src={logo}
-            alt="reactomepharma"
-            className="w-[5rem] h-[5rem]"
-          />
-          <p className=" text-[red] whitespace-nowrap ml-[0.5rem] text-[2.2rem] font-extrabold font-montserrat">
-            REACTOME
-            <span className="ml-[0.5rem] text-[var(--color-secondary)]">
-              PHARMA
-            </span>
-          </p>
-        </div>
+        <Link href="/">
+          <div className=" flex  items-center cursor-default">
+            <Image
+              src={logo}
+              alt="reactomepharma"
+              className="w-[5rem] h-[5rem]"
+            />
+            <p className=" text-[red] whitespace-nowrap ml-[0.5rem] text-[2.2rem] font-extrabold font-montserrat">
+              REACTOME
+              <span className="ml-[0.5rem] text-[var(--color-secondary)]">
+                PHARMA
+              </span>
+            </p>
+          </div>
+        </Link>
         <ul className=" hidden sm:flex space-x-[4rem] items-center">
           <li>
             <Link
@@ -92,15 +94,7 @@ export default function NavBar() {
                   Home
                 </Link>
               </li>
-              <li className="py-[3rem] border-b-[1px] border-[#e1e1e1] ">
-                <Link
-                  className="w-[40rem] text-center block"
-                  href="/about"
-                  onClick={() => setShowMenu((prev) => !prev)}
-                >
-                  About
-                </Link>
-              </li>
+
               <li className="py-[3rem]  border-b-[1px] border-[#e1e1e1]">
                 <Link
                   href="/products"
@@ -108,6 +102,15 @@ export default function NavBar() {
                   onClick={() => setShowMenu((prev) => !prev)}
                 >
                   Products
+                </Link>
+              </li>
+              <li className="py-[3rem] border-b-[1px] border-[#e1e1e1] ">
+                <Link
+                  className="w-[40rem] text-center block"
+                  href="/about"
+                  onClick={() => setShowMenu((prev) => !prev)}
+                >
+                  About
                 </Link>
               </li>
               <li className="py-[3rem]">
