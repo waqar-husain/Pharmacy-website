@@ -10,108 +10,117 @@ import med7 from "@/images/diclocare.jpg";
 import med8 from "@/images/mancare-d.jpg";
 
 import UserReview from "./components/partials/userReview";
+import Reveal from "./components/partials/reveal";
+import RevealUp from "./components/partials/reveal2";
 export default function Home() {
   return (
     <>
       {/*HEADER */}
       <header className="flex justify-center items-center font-lato bg-[url('../images/homeBg.jpg')] bg-cover bg-no-repeat px-[3.3rem] bg-center">
         <div className=" max-w-[1440px]  w-[100%] text-[var(--color-text-dark)] ">
-          <div className="max-w-[53rem] w-[100%] my-[18rem]">
-            <span className="uppercase bg-[var(--color-primary)] tracking-[0.8rem] pl-[0.8rem] text-center font-[500]">
-              Medical Professionals
-            </span>
+          <Reveal
+            initial={{ x: 500, opacity: 0 }}
+            dur={1.5}
+            animate={{ x: 0, opacity: 1 }}
+          >
+            <div className="max-w-[53rem] w-[100%] my-[18rem]">
+              <span className="uppercase bg-[var(--color-primary)] tracking-[0.8rem] pl-[0.8rem] text-center font-[500]">
+                Medical Professionals
+              </span>
 
-            <h1 className="text-[5rem] mt-[1.4rem] font-bold text-[#143450] font-montserrat leading-[1.2]">
-              Makes Your Health Better Will Makes Us Better
-            </h1>
-            <p className="mt-[2.3rem] ">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Perspiciatis mollitia, vitae similique laboriosam dolores neque
-              itaque odit quae nam error doloribus saepe consequuntur omnis
-              dignissimos est eum enim officiis nihil.
-            </p>
-            <Link href="/products">
-              <button className=" hover:bg-[#143450] transition duration-200 shadow-md bg-[var(--color-secondary)] mt-[1.4rem] px-[4.1rem] py-[1.7rem] font-inter text-white ">
-                Get Started
-              </button>
-            </Link>
-          </div>
+              <h1 className="text-[5rem] mt-[1.4rem] font-bold text-[#143450] font-montserrat leading-[1.2]">
+                Makes Your Health Better Will Makes Us Better
+              </h1>
+              <p className="mt-[2.3rem] ">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perspiciatis mollitia, vitae similique laboriosam dolores neque
+                itaque odit quae nam error doloribus saepe consequuntur omnis
+                dignissimos est eum enim officiis nihil.
+              </p>
+              <Link href="/products">
+                <button className=" hover:bg-[#143450] transition duration-200 shadow-md bg-[var(--color-secondary)] mt-[1.4rem] px-[4.1rem] py-[1.7rem] font-inter text-white ">
+                  Get Started
+                </button>
+              </Link>
+            </div>
+          </Reveal>
         </div>
       </header>
       <main>
         {/* SECTION 1 */}
-        <section className="flex justify-center font-lato mt-[15rem]">
-          <div className="max-w-[1440px] w-[100%] px-[1.3rem] flex flex-col items-center">
-            <div className="max-w-[46rem] text-center">
-              <p className="uppercase tracking-[0.5rem] text-[1.6rem]">
-                Prodcuts
-              </p>
-              <h1 className=" font-montserrat text-[var(--color-text-dark)] text-[3rem] mt-[1.3rem] leading-[1.5] font-bold">
-                We Delivers The Best
-              </h1>
-            </div>
+        <RevealUp initial={{ y: 200, opacity: 0 }}>
+          <section className="flex justify-center font-lato mt-[15rem]">
+            <div className="max-w-[1440px] w-[100%] px-[1.3rem] flex flex-col items-center">
+              <div className="max-w-[46rem] text-center">
+                <p className="uppercase tracking-[0.5rem] text-[1.6rem]">
+                  Prodcuts
+                </p>
+                <h1 className=" font-montserrat text-[var(--color-text-dark)] text-[3rem] mt-[1.3rem] leading-[1.5] font-bold">
+                  We Delivers The Best
+                </h1>
+              </div>
 
-            <div className=" grid grid-cols-[min(250px,_400px)] sm:grid-cols-[repeat(2,minmax(300px,_400px))] xl:grid-cols-[repeat(4,minmax(300px,_400px))] mt-[2.4rem] gap-[2rem]">
-              <div className="rounded-[0.5rem]  border-2  border-[var(--color-secondary)] shadow-lg overflow-hidden p-[1rem]">
-                <Image
-                  src={med1}
-                  alt="amoxytome"
-                  className=" rounded-[0.5rem] "
-                />
-              </div>
-              <div className="rounded-[0.5rem] border-2  border-[var(--color-secondary)] shadow-lg overflow-hidden p-[1rem]">
-                <Image
-                  src={med2}
-                  alt="levotome"
-                  className=" rounded-[0.5rem] "
-                />
-              </div>
-              <div className="rounded-[0.5rem] border-2  border-[var(--color-secondary)] shadow-lg overflow-hidden p-[1rem]">
-                <Image
-                  src={med3}
-                  alt="ciprotome"
-                  className=" rounded-[0.5rem] "
-                />
-              </div>
-              <div className="rounded-[0.5rem] border-2  border-[var(--color-secondary)] shadow-lg overflow-hidden p-[1rem]">
-                <Image
-                  src={med4}
-                  alt="cefixtome"
-                  className=" rounded-[0.5rem] "
-                />
-              </div>
-              <div className="rounded-[0.5rem] border-2  border-[var(--color-secondary)] shadow-lg overflow-hidden p-[1rem]">
-                <Image
-                  src={med5}
-                  alt="azitome"
-                  className=" rounded-[0.5rem] "
-                />
-              </div>
-              <div className="rounded-[0.5rem] border-2  border-[var(--color-secondary)] shadow-lg overflow-hidden p-[1rem]">
-                <Image
-                  src={med6}
-                  alt="pantacare"
-                  className=" rounded-[0.5rem] "
-                />
-              </div>
-              <div className="rounded-[0.5rem] border-2  border-[var(--color-secondary)] shadow-lg overflow-hidden p-[1rem]">
-                <Image
-                  src={med7}
-                  alt="diclocare"
-                  className=" rounded-[0.5rem] "
-                />
-              </div>
-              <div className="rounded-[0.5rem] border-2  border-[var(--color-secondary)] shadow-lg overflow-hidden p-[1rem]">
-                <Image
-                  src={med8}
-                  alt="mancare"
-                  className=" rounded-[0.5rem] "
-                />
+              <div className=" grid grid-cols-[min(250px,_400px)] sm:grid-cols-[repeat(2,minmax(300px,_400px))] xl:grid-cols-[repeat(4,minmax(300px,_400px))] mt-[2.4rem] gap-[2rem]">
+                <div className="rounded-[0.5rem]  border-2  border-[var(--color-secondary)] shadow-lg overflow-hidden p-[1rem]">
+                  <Image
+                    src={med1}
+                    alt="amoxytome"
+                    className=" rounded-[0.5rem] "
+                  />
+                </div>
+                <div className="rounded-[0.5rem] border-2  border-[var(--color-secondary)] shadow-lg overflow-hidden p-[1rem]">
+                  <Image
+                    src={med2}
+                    alt="levotome"
+                    className=" rounded-[0.5rem] "
+                  />
+                </div>
+                <div className="rounded-[0.5rem] border-2  border-[var(--color-secondary)] shadow-lg overflow-hidden p-[1rem]">
+                  <Image
+                    src={med3}
+                    alt="ciprotome"
+                    className=" rounded-[0.5rem] "
+                  />
+                </div>
+                <div className="rounded-[0.5rem] border-2  border-[var(--color-secondary)] shadow-lg overflow-hidden p-[1rem]">
+                  <Image
+                    src={med4}
+                    alt="cefixtome"
+                    className=" rounded-[0.5rem] "
+                  />
+                </div>
+                <div className="rounded-[0.5rem] border-2  border-[var(--color-secondary)] shadow-lg overflow-hidden p-[1rem]">
+                  <Image
+                    src={med5}
+                    alt="azitome"
+                    className=" rounded-[0.5rem] "
+                  />
+                </div>
+                <div className="rounded-[0.5rem] border-2  border-[var(--color-secondary)] shadow-lg overflow-hidden p-[1rem]">
+                  <Image
+                    src={med6}
+                    alt="pantacare"
+                    className=" rounded-[0.5rem] "
+                  />
+                </div>
+                <div className="rounded-[0.5rem] border-2  border-[var(--color-secondary)] shadow-lg overflow-hidden p-[1rem]">
+                  <Image
+                    src={med7}
+                    alt="diclocare"
+                    className=" rounded-[0.5rem] "
+                  />
+                </div>
+                <div className="rounded-[0.5rem] border-2  border-[var(--color-secondary)] shadow-lg overflow-hidden p-[1rem]">
+                  <Image
+                    src={med8}
+                    alt="mancare"
+                    className=" rounded-[0.5rem] "
+                  />
+                </div>
               </div>
             </div>
-          </div>
-        </section>
-
+          </section>
+        </RevealUp>
         {/* SECTION 2 */}
         <section className="flex justify-center font-lato my-[15rem]">
           <div className="max-w-[1440px] w-[100%] px-[1.3rem]  flex flex-col items-center">
@@ -125,10 +134,18 @@ export default function Home() {
             </div>
             {/* screen 600px => change grid to flex */}
             <div className="  flex items-center flex-col sm:grid grid-cols-[repeat(2,minmax(300px,_600px))] justify-center grid-rows-2 mt-[4.1rem]  gap-[2.2rem] w-[100%]">
-              <UserReview />
-              <UserReview />
-              <UserReview />
-              <UserReview />
+              <RevealUp delay={0} initial={{ y: 50, opacity: 0 }}>
+                <UserReview />
+              </RevealUp>
+              <RevealUp delay={0.3} initial={{ y: 50, opacity: 0 }}>
+                <UserReview />
+              </RevealUp>
+              <RevealUp delay={0} initial={{ y: 50, opacity: 0 }}>
+                <UserReview />
+              </RevealUp>
+              <RevealUp delay={0.3} initial={{ y: 50, opacity: 0 }}>
+                <UserReview />
+              </RevealUp>
             </div>
           </div>
         </section>
