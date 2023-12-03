@@ -19,14 +19,16 @@ export default function page() {
                   About Reactome Pharma
                 </h1>
                 <p className="text-[2rem] font-lato text-[var(--color-text-light)] mt-[4rem]">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
-                  amet dicta molestias quod earum sequi velit nulla expedita
-                  inventore? Nemo, nobis eius totam velit ad recusandae
-                  repudiandae ducimus laudantium veritatis. Lorem ipsum dolor
-                  sit amet consectetur adipisicing elit. Harum amet dicta
-                  molestias quod earum sequi velit nulla expedita inventore?
-                  Nemo, nobis eius totam velit ad recusandae repudiandae ducimus
-                  laudantium veritatis.
+                  Reactome Pharma is a leading pharmaceutical company dedicated
+                  to improving health and wellness in communities around the
+                  world. We are committed to providing innovative solutions and
+                  high-quality medications to healthcare professionals and
+                  patients. Our team of experienced professionals works
+                  tirelessly to research, develop, and distribute effective
+                  treatments for a wide range of medical conditions. At Reactome
+                  Pharma, we believe in the power of science to transform lives
+                  and are dedicated to making a positive impact on global
+                  health.
                 </p>
               </div>
               <div>
@@ -45,9 +47,9 @@ export default function page() {
                     Pharmacy
                   </h6>
                   <p className="mt-[2rem]">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Nisi, facilis impedit maxime quibusdam, tempore incidunt
-                    suscipit officiis
+                    At Reactome Pharma, we provide a wide range of
+                    pharmaceutical products, ensuring the highest quality and
+                    safety standards.
                   </p>
                 </div>
               </div>
@@ -60,9 +62,9 @@ export default function page() {
                     Latest Technology
                   </h6>
                   <p className="mt-[2rem]">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Nisi, facilis impedit maxime quibusdam, tempore incidunt
-                    suscipit officiis
+                    We leverage the latest technology to research and develop
+                    innovative solutions for healthcare professionals and
+                    patients.
                   </p>
                 </div>
               </div>
@@ -75,9 +77,8 @@ export default function page() {
                     Chemically Certified
                   </h6>
                   <p className="mt-[2rem]">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Nisi, facilis impedit maxime quibusdam, tempore incidunt
-                    suscipit officiis
+                    Our products are chemically certified, ensuring the highest
+                    level of safety and effectiveness for our customers.
                   </p>
                 </div>
               </div>

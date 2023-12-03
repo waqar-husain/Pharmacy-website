@@ -14,12 +14,13 @@ export default function NavBar() {
     <nav className="flex justify-center py-[3rem] px-[1.3rem] text-[1.8rem] font-inter relative">
       <div className=" max-w-[1440px] w-[100%] flex justify-between items-center">
         <Link href="/">
-          <div className=" flex  items-center cursor-default">
+          <div className=" flex  items-center">
             <Image
               src={logo}
               alt="reactomepharma"
-              className="w-[5rem] h-[5rem]"
+              className="w-[7rem] h-[7rem]"
             />
+
             <p className=" text-[red] whitespace-nowrap ml-[0.5rem] text-[2.2rem] font-extrabold font-montserrat">
               REACTOME
               <span className="ml-[0.5rem] text-[var(--color-secondary)]">

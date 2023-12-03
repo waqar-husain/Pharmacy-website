@@ -12,19 +12,21 @@ export default function Footer() {
     <footer className="flex justify-center font-lato bg-[url('../images/footerBg.jpg')] bg-cover bg-no-repeat bg-center px-[1.3rem]  text-[var(--color-text-lightest)]">
       <div className="max-w-[1440px] w-[100%] my-[9.5rem]">
         <div className="flex items-center justify-between ">
-          <div className=" flex  items-center cursor-default">
-            <Image
-              src={logo}
-              alt="reactomepharma"
-              className="w-[4.5rem] h-[4.5rem]"
-            />
-            <p className=" text-[red] whitespace-nowrap ml-[0.5rem] text-[2rem] font-extrabold font-montserrat">
-              REACTOME
-              <span className="ml-[0.5rem] text-[var(--color-secondary)]">
-                PHARMA
-              </span>
-            </p>
-          </div>
+          <Link href="/">
+            <div className=" flex  items-center">
+              <Image
+                src={logo}
+                alt="reactomepharma"
+                className="w-[8.5rem] h-[8.5rem]"
+              />
+              <p className=" text-[red] whitespace-nowrap ml-[0.5rem] text-[2rem] font-extrabold font-montserrat">
+                REACTOME
+                <span className="ml-[0.5rem] text-[var(--color-secondary)]">
+                  PHARMA
+                </span>
+              </p>
+            </div>
+          </Link>
           <div className="flex max-w-[66.2rem] w-[100%] justify-end space-x-[4rem] sm:justify-between items-center">
             <div className="hidden sm:inline-block">
               <Contact phone="true" footer="true" text="+(91) 9808559417" />

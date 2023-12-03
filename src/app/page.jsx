@@ -9,6 +9,11 @@ import med6 from "@/images/pantacare.jpg";
 import med7 from "@/images/diclocare.jpg";
 import med8 from "@/images/mancare-d.jpg";
 
+import person1 from "@/images/photo.png";
+import person2 from "@/images/person-1.jpg";
+import person3 from "@/images/person-2.jpg";
+import person4 from "@/images/person-3.jpg";
+
 import UserReview from "./components/partials/userReview";
 export default function Home() {
   return (
@@ -124,10 +129,38 @@ export default function Home() {
             </div>
             {/* screen 600px => change grid to flex */}
             <div className="  flex items-center flex-col sm:grid grid-cols-[repeat(2,minmax(300px,_600px))] justify-center grid-rows-2 mt-[4.1rem]  gap-[2.2rem] w-[100%]">
-              <UserReview />
-              <UserReview />
-              <UserReview />
-              <UserReview />
+              <UserReview
+                personImg={person1}
+                name={"Ravi Kumar"}
+                patientType={"Regular Customer"}
+                text={
+                  "The pharmacy staff is always helpful and knowledgeable. They always have my prescriptions ready on time."
+                }
+              />
+              <UserReview
+                personImg={person2}
+                name={"Vijay Sharma"}
+                patientType={"Senior Citizen"}
+                text={
+                  "The staff is always patient and takes the time to explain my medications to me. I appreciate their care and attention."
+                }
+              />
+              <UserReview
+                personImg={person3}
+                name={"Amit Patel"}
+                patientType={"First-time Customer"}
+                text={
+                  "I had a great experience at this pharmacy. The staff was friendly and they had my prescription ready quickly."
+                }
+              />
+              <UserReview
+                personImg={person4}
+                name={"Rajesh Singh"}
+                patientType={"Long-term Customer"}
+                text={
+                  "I've been coming to this pharmacy for years. The staff is always friendly and they go above and beyond to help."
+                }
+              />
             </div>
           </div>
         </section>

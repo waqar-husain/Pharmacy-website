@@ -29,6 +29,10 @@ body {
   box-sizing: border-box;
 }
 
+a {
+  cursor: pointer;
+}
+
 @media screen and (max-width: 1200px) {
   html {
     font-size: 50%; /*1rem=8px*/
